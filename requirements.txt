@@ -1,0 +1,5 @@
+mkdocs >= 1.5
+mkdocs-material
+mkdocs-table-reader-plugin
+mkdocs-markdownextradata-plugin
+requests

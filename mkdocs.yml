@@ -1,0 +1,38 @@
+site_name: Eclipse projects @ GitHub
+site_description: Eclipse projects @ GitHub
+strict: false
+
+site_url: https://eclipsefdn.github.io/otterdog-configs/
+docs_dir: ./docs
+site_dir: ./_site
+
+repo_name: EclipseFdn/otterdog-configs
+repo_url: https://github.com/EclipseFdn/otterdog-configs/
+
+theme:
+  name: 'material'
+
+nav: []
+
+markdown_extensions:
+- tables
+- attr_list
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+watch: []
+
+plugins:
+  - table-reader
+  - markdownextradata:
+      data: docs
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://unpkg.com/tablefilter@0.7.3/dist/tablefilter/tablefilter.js
+  - javascripts/tablesort.js
+  - javascripts/tablefilter.js
+
+extra:
+  generator: false
