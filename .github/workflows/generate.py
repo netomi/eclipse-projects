@@ -35,9 +35,8 @@ def generate():
         out.write("| :----------- | :-------------- | :------------------ |\n")
 
         for project in projects:
-            name = project["name"]
-            project_id = project["project_id"]
-
+            name = escape(project["name"])
+            project_id = escape(project["project_id"])
             github_id = project["github"]["org"]
 
             if not github_id:
@@ -50,6 +49,10 @@ def generate():
             out.write(f"| {name} "
                       f"| [{project_id}](https://projects.eclipse.org/projects/{project_id}) "
                       f"| [{github_id}](https://github.com/{github_id}) |\n")
+
+
+def escape(s: str) -> str:
+    return s.replace("|", "&#9;")
 
 
 if __name__ == "__main__":
