@@ -34,5 +34,8 @@ extra_javascript:
   - javascripts/tablesort.js
   - javascripts/tablefilter.js
 
+extra_css:
+  - css/extra.css
+
 extra:
   generator: false
