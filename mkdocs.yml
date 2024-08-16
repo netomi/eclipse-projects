@@ -2,12 +2,12 @@ site_name: Eclipse projects @ GitHub
 site_description: Eclipse projects @ GitHub
 strict: false
 
-site_url: https://eclipsefdn.github.io/otterdog-configs/
+site_url: https://netomi.github.io/eclipse-projects/
 docs_dir: ./docs
 site_dir: ./_site
 
-repo_name: EclipseFdn/otterdog-configs
-repo_url: https://github.com/EclipseFdn/otterdog-configs/
+repo_name: netomi/eclipse-projects
+repo_url: https://github.com/netomi/eclipse-projects/
 
 theme:
   name: 'material'
